@@ -1,6 +1,6 @@
 FROM alpine:3.10
 
-MAINTAINER Eldad Assis <eldad.assis@gmail.com>
+MAINTAINER <s.billon@linkbynet.com>
 
 # Install postfix and supervisor
 RUN apk add --no-cache \

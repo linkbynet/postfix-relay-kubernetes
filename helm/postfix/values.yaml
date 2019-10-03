@@ -34,7 +34,7 @@ serviceAccount:
 # Docker image
 image:
   repository: https://hub.docker.com/r/linkbn/postfix-relay-kubernetes
-  tag: 0.1
+  tag: latest
   pullPolicy: IfNotPresent
 
 # Expose pods with service on port 25

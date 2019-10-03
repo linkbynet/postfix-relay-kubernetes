@@ -6,7 +6,7 @@ name: postfix
 keywords:
 - postfix
 sources:
-- https://github.com/eldada/postfix-relay-kubernetes
+- https://github.com/linkbynet/postfix-relay-kubernetes
 maintainers:
-- name: eldada
-  email: eldada@jfrog.com
+- name: sbillon 
+  email: s.billon@linkbynet.com

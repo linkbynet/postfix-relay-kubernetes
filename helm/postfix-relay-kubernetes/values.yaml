@@ -33,7 +33,7 @@ serviceAccount:
 
 # Docker image
 image:
-  repository: https://hub.docker.com/r/linkbn/postfix-relay-kubernetes
+  repository: linkbn/postfix-relay-kubernetes
   tag: latest
   pullPolicy: IfNotPresent
 

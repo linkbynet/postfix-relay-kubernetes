@@ -13,7 +13,7 @@ jobs:
     - name: Publish
       uses: djerfy/gh-actions/helm-gh-pages@master
       with:
-        args: helm/postfix https://github.com/linkbynet/kubernetes-repo-helm master
+        args: helm/postfix-relay-kubernetes https://github.com/linkbynet/kubernetes-repo-helm master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_SSHKEY: ${{ secrets.GITHUB_SSHKEY }}

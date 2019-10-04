@@ -2,7 +2,7 @@ apiVersion: v1
 version: 0.1.2
 appVersion: 0.4
 description: A Helm chart for a highly available postfix relay in Kubernetes
-name: postfix
+name: postfix-relay-kubernetes
 keywords:
 - postfix
 sources:

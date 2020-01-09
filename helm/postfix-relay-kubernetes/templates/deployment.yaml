@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: {{ template "postfix.fullname" . }}
+  name: relay-smtp
   labels:
     app: {{ template "postfix.name" . }}
     chart: {{ template "postfix.chart" . }}

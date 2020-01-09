@@ -46,7 +46,7 @@ service:
 # Used by postfix to connect to SMTP server
 smtp:
   # Example with mailgun
-  relayHost: "[smtp.sendrig.net]:587"
+  relayHost: "[smtp.sendgrid.net]:587"
   relayMyhostname: my.host.local
   relayUsername: relayuser
   relayPassword: relaypassword

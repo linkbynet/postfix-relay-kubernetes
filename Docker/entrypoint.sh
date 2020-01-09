@@ -21,7 +21,10 @@ rm /etc/postfix/sasl_passwd || exit 1
 # Set configurations
 postconf 'smtp_sasl_auth_enable = yes' || exit 1
 postconf 'smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd' || exit 1
-postconf 'smtp_sasl_security_options =' || exit 1
+postconf 'smtp_sasl_security_options = noanonymous' || exit 1
+postconf 'smtp_sasl_tls_security_options = noanonymous' || exit 1
+postconf 'smtp_tls_security_level = encrypt' || exit 1
+postconf 'header_size_limit = 4096000' || exit 1
 
 # These are required
 postconf "relayhost = ${TX_SMTP_RELAY_HOST}" || exit 1

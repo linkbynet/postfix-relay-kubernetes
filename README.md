@@ -65,17 +65,17 @@ The Chart will deploy 2 pods (for high availability), load balanced with a servi
 
 ```bash
 # Add helm repository
-helm repo add linkbynet https://linkbynet.github.io/kubernetes-repo-helm
+helm repo add lbn https://linkbynet.github.io/helm-charts
 
 # Need to set SMTP connection details
 export SMTP="[smtp.mailgun.org]:587"
 export USERNAME=<your smtp username>
 export PASSWORD=<your smtp password>
 
-helm upgrade --install postfix-relay \
+helm upgrade --install relay-smtp \
         --set smtp.relayHost=${SMTP} \
         --set smtp.relayMyhostname=my.local \
         --set smtp.relayUsername=${USERNAME} \
         --set smtp.relayPassword=${PASSWORD} \ 
-        linkbynet/postfix-relay-kubernetes
+        lbn/relay-smtp
 ```
